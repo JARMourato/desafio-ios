@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r0R-hg-wlX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TableVC-->
+        <scene sceneID="9wy-L2-xcd">
+            <objects>
+                <viewController storyboardIdentifier="TableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d0b-dw-VCd" customClass="TableVC" customModule="JavaGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PjK-RU-4yr"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYw-LK-CvQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U7K-Lx-Qyh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1VO-6L-ZyF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1VO-6L-ZyF" firstAttribute="leading" secondItem="U7K-Lx-Qyh" secondAttribute="leading" id="0uk-9w-hvu"/>
+                            <constraint firstAttribute="bottom" secondItem="1VO-6L-ZyF" secondAttribute="bottom" id="3X1-Bu-aaj"/>
+                            <constraint firstAttribute="trailing" secondItem="1VO-6L-ZyF" secondAttribute="trailing" id="7KH-xM-l2Y"/>
+                            <constraint firstItem="1VO-6L-ZyF" firstAttribute="top" secondItem="U7K-Lx-Qyh" secondAttribute="top" id="DbX-bN-xgL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e11-SI-mhn"/>
+                    <connections>
+                        <outlet property="tableView" destination="1VO-6L-ZyF" id="3yI-YV-2eo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RYF-Zm-wQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664.79999999999995" y="-175.86206896551727"/>
+        </scene>
+        <!--NavVC-->
+        <scene sceneID="Mtz-ju-GuD">
+            <objects>
+                <navigationController storyboardIdentifier="NavVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r0R-hg-wlX" customClass="NavVC" customModule="JavaGit" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tbw-bf-2jI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvK-sl-Y10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274.39999999999998" y="-175.86206896551727"/>
+        </scene>
+    </scenes>
+</document>

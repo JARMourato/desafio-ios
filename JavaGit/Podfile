@@ -1,0 +1,27 @@
+platform :ios, '8.0'
+
+use_frameworks!
+
+def commonPods
+    pod 'Moya-ObjectMapper/RxSwift', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
+    pod 'Moya', :git => 'https://github.com/Moya/Moya'
+    pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift'
+end
+
+target 'JavaGit' do
+	
+    commonPods
+	pod 'RxKeyboard'
+	pod 'RxSwiftExt'
+	pod 'RxDataSources', '~> 1.0'
+
+    pod 'Kingfisher'
+
+    pod 'SwiftMonkeyPaws', :git => 'https://github.com/zalando/SwiftMonkey.git'
+
+end
+
+
+target 'JavaGitUITests' do
+    pod 'SwiftMonkey', :git => 'https://github.com/zalando/SwiftMonkey.git'
+end
